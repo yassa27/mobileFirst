@@ -13,6 +13,37 @@ body {
 .mainContent {
   margin: 0 10px;
 }
+header {
+  display: flex;
+  flex-wrap: wrap;
+ }
+ .loginLinks {
+  /* Don't set flex-basis as wrap will overrule it just stop grow and shrink */
+  flex: 0;
+ }
+ .loginLinks > ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  justify-content: flex-end;
+ }
+ .loginLinks > ul > li {
+  border: 1px solid #000;
+ }
+ .loginLinks > ul > li:first-child {
+  margin-right: 4px;
+ }
+ .loginLinks > ul > li > a {
+  padding: 4px 2px;
+  color: #000;
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+ }
+ .logo img {
+  max-width: 400px;
+  padding: 5px;
+  }
 img {
   width: 100%;
 }
@@ -37,17 +68,6 @@ img {
   color: #fff;
   padding: 8px 0;
 }
-<<<<<<< HEAD
-=======
-.news {
-  display: flex;
-  flex-wrap: wrap;
-}
-.newsItem {
-  flex-basis: 50%;
-  padding: 5px;
-}
->>>>>>> 809a4a686c6aa229bcb30a597b7997a5dc6e56fa
 .bars {
   float: right;
   cursor: pointer;
@@ -60,7 +80,30 @@ img {
   margin: 6px 0;
   background-color: #000;
 }
-<<<<<<< HEAD
+.search > form {
+  display: flex;
+ }
+ .search {
+  flex-basis: 100%;
+ }
+ .burgerMenu {
+  /* Don't set flex-basis as wrap will overrule it just stop grow and shrink*/
+  flex: 0;
+  padding: 13px 11px 0 11px;
+ }
+ input[type="search"] {
+  flex-basis: 80%;
+  padding: 12px 5px;
+  border: 1px solid #ccc;
+  border-right: none;
+  -webkit-appearance: none;
+ }
+ button[type="submit"] {
+  flex-basis: 20%;
+  background-color: #4caf50;
+  border: none;
+  color: #fff;
+ }
 .news {
   display: flex;
   flex-wrap: wrap;
@@ -69,5 +112,53 @@ img {
   flex-basis: 50%;
   padding: 5px;
 }
-=======
->>>>>>> 809a4a686c6aa229bcb30a597b7997a5dc6e56fa
+footer {
+  background-color: #011424;
+  color: #fff;
+  padding: 0 10px;
+ }
+ footer .row {
+  display: flex;
+  flex-direction: column;
+ }
+ footer .row address {
+  padding: 15px 0 5px 5px;
+ }
+ .footerSocialLinks {
+  flex-basis: 20%;
+ }
+ .footerSocialLinks ul {
+  display: flex;
+  list-style: none;
+  padding-left: 5px;
+ }
+ .footerSocialLinks ul li {
+  flex-basis: 40px;
+ }
+ .footerSocialLinks ul li a i {
+  color: #fff;
+  font-size: 1.4rem;
+ }
+ .footerLinks {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  flex-wrap: wrap;
+ }
+ .footerLinks li {
+  border-right: 1px solid #ccc;
+ }
+ .footerLinks li:last-child {
+  border-right: none;
+ }
+ .footerLinks li a {
+  font-size: 0.8rem;
+  width: 100%;
+  display: inline-block;
+  padding: 2px 5px;
+  text-decoration: none;
+  color: #fff;
+ }
+ .footerLinks li a:hover {
+  text-decoration: underline;
+ }
