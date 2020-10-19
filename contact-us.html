@@ -74,14 +74,15 @@
           <div class="form">
             <!--			form here-->
 
-            <form action="">
+            
+            <form action="thank-you.html" method="get">
               <div>
                 <label for="surname">Surname</label>
-                <input type="text" name="surname" id="surname" />
+                <input type="text" name="surname" id="surname" required placeholder="Enter surname"/>
               </div>
               <div>
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email" />
+                <input type="email" name="email" id="email" required placeholder="Enter email address" />
               </div>
               <div>
                 <label for="comments">Comments</label>
@@ -92,7 +93,9 @@
                   rows="10"
                 ></textarea>
               </div>
-
+              <div><label for="dob">Date of Birth</label>
+              <input type="date" name= "dob" id="dob">
+              </div>
               <div class="inlineLabels">
                 <p>Gender</p>
                 <label for="male">Male</label>
